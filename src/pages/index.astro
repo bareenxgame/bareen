@@ -1,0 +1,35 @@
+---
+import "../styles/style.css";
+
+import Header from "../layouts/header.astro";
+import HeroSection from "../components/HeroSection.astro";
+import InfoSection from "../components/InfoSection.astro";
+import EventSection from "../components/EventSection.astro";
+import NewCollectionSection from "../components/NewCollectionSection.astro";
+import Footer from "../layouts/Footer.astro";
+import Button from "../components/Button.astro";
+import Banner from "../components/Banner.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bareen X GAME</title>
+  </head>
+
+  <body>
+    <Header />
+    <main>
+      <HeroSection />
+      <InfoSection />
+      <Banner />
+      <InfoSection />
+      <Banner />
+      <EventSection />
+      <NewCollectionSection />
+    </main>
+    <Footer />
+  </body>
+</html>
