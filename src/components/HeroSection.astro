@@ -1,0 +1,40 @@
+---
+import Button from "../components/Button.astro";
+---
+
+<div class="grid_1-1">
+  <div>
+    <img src="images/hero.png" alt="logo" />
+  </div>
+  <div>
+    <img src="images/billede2.webp" alt="hero" />
+    <!-- <video src="videos/hero.mp4" autoplay muted loop playsinline></video> -->
+  </div>
+</div>
+<div class="divider"></div>
+<div class="grid_1-1 center">
+  <Button text="EXPLORE EVENT" />
+  <Button text="VIEW COLLECTION" />
+</div>
+<div class="divider"></div>
+
+<style>
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  center {
+    justify-content: center;
+  }
+</style>
