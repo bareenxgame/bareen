@@ -16,12 +16,15 @@
   --font-size-h1-desktop: 2rem;
 
   /* Font sizes mobile*/
-  --font-size-text-mobile: 0.875rem;
-  --font-size-h1-mobile: 1rem;
+  --font-size-text-mobile: 1rem;
+  --font-size-h1-mobile: 2rem;
 
   /* Spacing sizes */
-  --spacing-phone: 0.5rem; /* Ekstra lille mellemrum */
-  --spacing-desktop: 1rem; /* Lille mellemrum */
+  --spacing-phone-margins: 1rem; /* Margins mellemrum phone*/
+  --spacing-phone: 0.5rem; /* Sektions mellemrum phone*/
+
+  --spacing-dekstop-margins: 5rem; /* Margins mellemrum desktop*/
+  --spacing-desktop: 1rem; /* Sektions mellemrum dekstop */
 }
 /***** RESET *****/
 * {
@@ -41,4 +44,36 @@ p {
   font-family: var(--font-text);
   font-size: var(--font-size-text-mobile);
   font-weight: 400; /* Regular */
+  max-width: 45ch;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: var(--color-primary);
+  margin-left: var(--spacing-phone-margins);
+  margin-right: var(--spacing-phone-margins);
+}
+
+.divider {
+  width: 100vw; /* Gør stregen lige så bred som hele viewport */
+  height: 1px;
+  background-color: black;
+  margin: 2rem 0; /* Giver luft over og under */
+  position: relative; /* Sørger for at den følger layoutet */
+  left: 50%; /* Centrerer elementet horisontalt */
+  margin-left: -50vw; /* Justerer så stregen går helt ud til kanten */
+}
+
+@media (min-width: 1024px) {
+  body {
+    margin-left: var(--spacing-dekstop-margins);
+    margin-right: var(--spacing-dekstop-margins);
+  }
+
+  p {
+    max-width: 65ch;
+  }
 }
