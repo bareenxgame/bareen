@@ -1,0 +1,145 @@
+---
+---
+<footer>
+ <div class="flex">
+   
+    <div class="titler">
+           <a href="#">SHOP</a>
+           <p>Dame</p>
+           <p>Herre</p>
+      <br>
+           <a href="#">INFORMATION</a>
+           <p>Vores historie</p>
+       <br>
+           <a href="#">KUNDESERVICE</a>
+           <p>Man-fre: 9-16</p>
+           <p>Weekend og helligdage: Lukket</p>
+           <p class="mail">contact@bareen.com</p>
+           </div>
+
+                 <br>
+            <div>
+        <img class="logo" src="logo/logo_sort.svg" alt="logo" />
+    </div>
+        </div>
+    <br>
+    <hr>
+    <br>
+
+        <div class="footer-bottom">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookies</a>
+          <p class="footer-bottom1">© All rights reserved 2025</p>
+        </div>
+   
+    </footer>
+
+<style>
+
+.flex{
+display: flex;
+flex-direction: row;
+align-items:center;
+justify-items: flex-start;
+gap: 40px; 
+padding-bottom: 20px;
+}
+
+ footer {
+  padding: 2rem 4rem;
+  background-color:#e7e3d8;
+  color: black;
+  margin-top: auto;
+  position: relative;
+  padding-bottom: 40px;
+} 
+
+
+
+
+footer a {
+  color: black;
+  padding-right: 20px;
+  font-family: var(--font-text); 
+} 
+
+
+.mail {
+  text-decoration: underline;
+}
+
+
+.titler {
+    margin-left: 5rem;
+    font-weight: bold;
+
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+.footer-bottom1 {
+    display: flex;
+    justify-content: flex-start;
+     font-size: 11px;
+    opacity: 0.7;
+
+}
+
+hr{
+  border: 0.5px solid;
+  margin: auto;
+}
+
+li {
+  font-family: var(--font-text);
+
+}
+
+.logo {
+    padding-left: 20rem;
+}
+
+  @media (max-width: 768px) {
+      
+   li, a {
+    font-family: var(--font-text); 
+    font-size: small;
+    }
+    
+
+    .footer-bottom {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    font-size: 6px;
+    opacity: 0.7;
+    }
+
+    .flex {
+     display: grid;
+    grid-template-columns: 1fr;
+
+    }
+   
+
+.titler {
+    margin-left: 0rem;
+    font-weight: bold;
+    gap: 2px;
+}
+
+.logo {
+    width: 80%;
+    padding-left: 5rem;
+}
+
+}
+</style>
+
