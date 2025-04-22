@@ -51,7 +51,7 @@ img {
   max-width: 100%;
 }
 
-body {
+main {
   background-color: var(--color-primary);
   margin-left: var(--spacing-phone-margins);
   margin-right: var(--spacing-phone-margins);
@@ -68,7 +68,7 @@ body {
 }
 
 @media (min-width: 1024px) {
-  body {
+  main {
     margin-left: var(--spacing-dekstop-margins);
     margin-right: var(--spacing-dekstop-margins);
   }
