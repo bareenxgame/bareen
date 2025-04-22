@@ -1,0 +1,10 @@
+---
+const { title } = Astro.props;
+const { text } = Astro.props;
+const { img } = Astro.props;
+const { alt } = Astro.props;
+---
+
+<img src={img} alt={alt} />
+<h1>{title}</h1>
+<p>{text}</p>
