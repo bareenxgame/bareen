@@ -1,0 +1,44 @@
+/****** ROOT VARIABLES ******/
+:root {
+  /* Color */
+  --color-primary: #e7e3d8; /* Sandfarvet*/
+  --color-secondary: #353535; /* Mørkegrå */
+  --color-tertiary: #ffffff; /* Hvid */
+  --color-quaternary: #000000; /* Sort */
+  --color-accent: #f6762a; /* Orange */
+
+  /*Font*/
+  --font-heading: "Helvetica neue", sans-serif;
+  --font-text: "Helvetica neue", sans-serif;
+
+  /* Font sizes desktop*/
+  --font-size-text-desktop: 1.2rem;
+  --font-size-h1-desktop: 2rem;
+
+  /* Font sizes mobile*/
+  --font-size-text-mobile: 0.875rem;
+  --font-size-h1-mobile: 1rem;
+
+  /* Spacing sizes */
+  --spacing-phone: 0.5rem; /* Ekstra lille mellemrum */
+  --spacing-desktop: 1rem; /* Lille mellemrum */
+}
+/***** RESET *****/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/***** GENERAL STYLES *****/
+h1 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h1-desktop);
+  font-weight: 500; /* Semibold */
+}
+
+p {
+  font-family: var(--font-text);
+  font-size: var(--font-size-text-mobile);
+  font-weight: 400; /* Regular */
+}
