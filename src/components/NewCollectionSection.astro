@@ -1,0 +1,75 @@
+---
+
+---
+
+<section>
+  <div class="divider"></div>
+  <div class="container">
+    <button class="arrow arrow-left" onclick="changeSlide(-1)">❮</button>
+    <div class="card">
+      <img src="/images/billede2.webp" alt="Billede 2" />
+      <p>New Collection</p>
+      <a href="#"> Read more </a>
+    </div>
+
+    <div class="card">
+      <img src="/images/billede3.webp" alt="Billede 3" />
+      <p>New Collection</p>
+      <a href="#"> Read more </a>
+    </div>
+
+    <div class="card">
+      <img src="/images/billede4.webp" alt="Billede 4" />
+      <p>New Collection</p>
+      <a href="#"> Read more </a>
+    </div>
+    <button class="arrow arrow-right" onclick="changeSlide(1)">❯</button>
+  </div>
+</section>
+<style>
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    gap: 10px;
+    background-color: white;
+    padding: 20px;
+    width: 500px;
+  }
+  p {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  a {
+    font-family: var(--font-text);
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+  }
+  a:hover {
+    color: #f6762a;
+  }
+  .arrow {
+    background-color: rgba(0, 0, 0, 0);
+    color: #f6762a;
+    border: none;
+    transition: transform 0.2s; /* Animation */
+    cursor: pointer;
+    font-size: 50px;
+  }
+
+  .arrow:hover {
+    color: #000000;
+    transform: scale(1.5);
+  }
+</style>
