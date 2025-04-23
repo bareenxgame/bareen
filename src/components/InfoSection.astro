@@ -1,13 +1,9 @@
 ---
-const { title } = Astro.props;
-const { text } = Astro.props;
-const { img } = Astro.props;
-const { alt } = Astro.props;
+const { title, text, img, alt, isReversed } = Astro.props;
 ---
 
 <div class="divider"></div>
-
-<div class="grid-1_1">
+<div class=`card ${isReversed && "reversed"}`>
   <img src={img} alt={alt} />
   <div>
     <h1>{title}</h1>
@@ -18,10 +14,12 @@ const { alt } = Astro.props;
 
 <style>
   @media (min-width: 1024px) {
-    .grid-1_1 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+    .card {
+      display: flex;
       gap: 10px;
+    }
+    .reversed {
+      flex-direction: row-reverse;
     }
   }
 </style>
