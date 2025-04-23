@@ -1,74 +1,135 @@
 ---
 ---
-
+<script>
+    const burger = document.querySelector(".burger");
+const nav = document.querySelector("nav");
+const menu = document.querySelector(".menu");
+</script>
 
 <header>
+   
+     <img class="logo" src="logo/logo_hvid.svg" alt="Logo" class="logo">
+
    <nav class="menu">
-        <ul>
-            <li class="right"><a href=#aboutthecollab">About the collab</a></li>
-            <li class="right"><a href="#mission">Event</a></li>
+
+        <ul class="titler">
+            <li><a href="#aboutthecollab">About the collab</a></li>
+            <li><a href="#event">Event</a></li>
         </ul>
         <br>
 
+          <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
     </nav>
-   
 </header>
+
 
 
 <style>
 
+
 header {
- 
   background-color: #353535;
   z-index: 1000;
   display: flex;
-  justify-content:end;
-  text-align:center;
+  justify-content: end;
   align-items: center;
-  padding: 30px; 
+  padding: 30px;
 }
 
 .menu {
   width: 100%;
+  display: flex;              
+  justify-content: flex-end;  
+  align-items: center;
+  gap: 20px;
 }
 
 .menu ul {
   display: flex;
-  width: 100%; 
-  align-items: center;
-  padding: 0;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.left {
-   margin-right:10px; 
-}
-
-.right {
- padding-left: 40rem;
+.titler {
+  display: flex;
+  gap: 35px;
 }
 
 .menu li {
-  margin-right: 10px;
+  margin: 0;
 }
 
 .menu a {
   display: inline-block;
-  color:white;
+  color: white;
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
+.logo {
+    width: 10%;
 
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #f6762a;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: block;
+}
+
+@media (max-width: 768px) {
   header {
-  background-color: #353535;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px; 
-  height: 5.5rem;
+    background-color: #353535;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    height: 5.5rem;
+  }
+
+  .logo {
+    width: 25%;
 }
+
+.burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
 }
+
 </style>
+
+
+
+
 
