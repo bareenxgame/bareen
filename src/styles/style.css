@@ -12,8 +12,8 @@
   --font-text: "Helvetica neue", sans-serif;
 
   /* Font sizes desktop*/
-  --font-size-text-desktop: 1.2rem;
-  --font-size-h1-desktop: 2rem;
+  --font-size-text-desktop: 1.8rem;
+  --font-size-h1-desktop: 2.4rem;
 
   /* Font sizes mobile*/
   --font-size-text-mobile: 1rem;
@@ -55,7 +55,7 @@ body {
   background-color: var(--color-primary);
 }
 
-main {
+section {
   background-color: var(--color-primary);
   margin-left: var(--spacing-phone-margins);
   margin-right: var(--spacing-phone-margins);
@@ -63,7 +63,7 @@ main {
 
 .divider {
   width: 100vw; /* Gør stregen lige så bred som hele viewport */
-  height: 1px;
+  height: 1.7px;
   background-color: black;
   margin: 2rem 0; /* Giver luft over og under */
   position: relative; /* Sørger for at den følger layoutet */
@@ -72,12 +72,16 @@ main {
 }
 
 @media (min-width: 1024px) {
-  main {
+  section {
     margin-left: var(--spacing-dekstop-margins);
     margin-right: var(--spacing-dekstop-margins);
   }
 
   p {
     max-width: 65ch;
+  }
+
+  h1 {
+    max-width: 25ch;
   }
 }

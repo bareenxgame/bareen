@@ -1,135 +1,117 @@
 ---
+
 ---
-<script>
-    const burger = document.querySelector(".burger");
-const nav = document.querySelector("nav");
-const menu = document.querySelector(".menu");
-</script>
 
 <header>
-   
-     <img class="logo" src="logo/logo_hvid.svg" alt="Logo" class="logo">
+  <img class="logo" src="logo/logo_hvid.svg" alt="Logo" class="logo" />
 
-   <nav class="menu">
-
-        <ul class="titler">
-            <li><a href="#aboutthecollab">About the collab</a></li>
-            <li><a href="#event">Event</a></li>
-        </ul>
-        <br>
-
-          <div class="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-    </nav>
+  <nav class="menu">
+    <ul class="titler">
+      <li><a href="#aboutthecollab">About the collab</a></li>
+      <li><a href="#event">Event</a></li>
+    </ul>
+  </nav>
 </header>
 
-
-
 <style>
-
-
-header {
-  background-color: #353535;
-  z-index: 1000;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  padding: 30px;
-}
-
-.menu {
-  width: 100%;
-  display: flex;              
-  justify-content: flex-end;  
-  align-items: center;
-  gap: 20px;
-}
-
-.menu ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.titler {
-  display: flex;
-  gap: 35px;
-}
-
-.menu li {
-  margin: 0;
-}
-
-.menu a {
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-}
-
-.logo {
-    width: 10%;
-
-}
-
-.burger {
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-}
-
-.burger .line {
-  width: 100%;
-  height: 2px;
-  background-color: #f6762a;
-  margin-bottom: 5px;
-  transition: 0.2s linear;
-}
-.burger {
-  display: block;
-}
-
-@media (max-width: 768px) {
   header {
     background-color: #353535;
     z-index: 1000;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
+    font-family: var(--font-text);
+    font-size: 1rem;
+    font-weight: 500;
     padding: 30px;
-    height: 5.5rem;
   }
 
-  .logo {
-    width: 25%;
-}
+  .menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+  }
 
-.burger {
+  .menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .titler {
+    display: flex;
+    gap: 35px;
+  }
+
+  .menu li {
+    margin: 0;
+  }
+
+  .menu a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+  }
+  .menu a:hover {
+    display: inline-block;
+    color: #f6762a;
+    text-decoration: none;
+  }
+  .logo {
+    width: 15%;
+  }
+
+  .burger {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .burger .line {
+    width: 100%;
+    height: 2px;
+    background-color: #f6762a;
+    margin-bottom: 5px;
+    transition: 0.2s linear;
+  }
+  .burger {
     display: block;
   }
-  .burger.active .line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-    transition: 0.2s linear;
+
+  @media (max-width: 768px) {
+    header {
+      background-color: #353535;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px;
+      height: 5.5rem;
+    }
+
+    .logo {
+      width: 45%;
+    }
+
+    .burger {
+      display: block;
+    }
+    .burger.active .line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+      transition: 0.2s linear;
+    }
+
+    .burger.active .line:nth-child(2) {
+      opacity: 0;
+      transition: 0.15s linear;
+    }
+
+    .burger.active .line:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+      transition: 0.2s linear;
+    }
   }
-
-  .burger.active .line:nth-child(2) {
-    opacity: 0;
-    transition: 0.15s linear;
-  }
-
-  .burger.active .line:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-    transition: 0.2s linear;
-  }
-
-}
-
 </style>
-
-
-
-
-
