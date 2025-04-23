@@ -38,11 +38,11 @@ import Button from "../components/Button.astro";
     height: 438px;
     position: absolute;
     left: 50%;
-    top: 88px;
+    top: 90px;
   }
   .line {
     width: 100vw; /* Gør stregen lige så bred som hele viewport */
-    height: 1px;
+    height: 1.7px;
     background-color: black;
     margin-bottom: 1.8rem;
     position: relative; /* Sørger for at den følger layoutet */
@@ -58,20 +58,20 @@ import Button from "../components/Button.astro";
   .grid-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
   .margin {
-    margin-left: 0.2rem;
+    padding-left: 50px;
+    width: 80%;
+    height: auto;
   }
   @media (min-width: 1024px) {
     .vl {
-      border-left: 1px solid black;
+      border-left: 1.7px solid black;
       height: 1227px;
       position: absolute;
       left: 50%;
       top: 97px;
-    }
-    .margin {
-      margin-left: 0.7rem;
     }
   }
 </style>
